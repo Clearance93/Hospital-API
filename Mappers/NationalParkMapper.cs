@@ -9,6 +9,9 @@ namespace ParkyApplication.Mappers
         public NationalParkMapper()
         {
             CreateMap<NationalParkModel, NationalParkDtos>().ReverseMap();
+            CreateMap<TrailModels, TrailDto>().ReverseMap();
+            CreateMap<TrailModels, CreateTrailDto>().ReverseMap();
+            CreateMap<TrailModels, UpdatetrailDto>().ReverseMap();
         }
     }
 }

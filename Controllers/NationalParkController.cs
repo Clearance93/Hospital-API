@@ -55,6 +55,14 @@ namespace ParkyApplication.Controllers
             }
 
             var objDto = _map.Map<NationalParkDtos>(obj);
+
+            ///
+            ///var objDto = new NationalParkDtos(){
+            /// Created = obj.created,
+            /// Id = obj.Id,
+            /// Name = obj.Name,
+            /// State = obj.State
+            /// };
             return Ok(objDto);
         }
 
